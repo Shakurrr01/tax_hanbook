@@ -32,7 +32,6 @@ import {
 
 const Introduction = () => {
   const quickLinks = [
-    { path: '/disclaimer', label: 'Disclaimer & Legal Information', icon: <FileText size={20} /> },
     { path: '/foreword', label: 'Foreword', icon: <BookOpen size={20} /> },
     { path: '/rra-info', label: 'RRA Information', icon: <Building size={20} /> },
     { path: '/definitions', label: 'Tax Definitions', icon: <Scale size={20} /> },
@@ -87,7 +86,6 @@ const Introduction = () => {
                 <div className="quick-link-content">
                   <h3 className="quick-link-title">{link.label}</h3>
                   <p className="quick-link-description">
-                    {link.path === '/disclaimer' && 'Legal disclaimers and terms of use'}
                     {link.path === '/foreword' && 'Commissioner\'s message and introduction'}
                     {link.path === '/rra-info' && 'About Rwanda Revenue Authority'}
                     {link.path === '/definitions' && 'Tax terminology and definitions'}

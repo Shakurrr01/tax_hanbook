@@ -1,4 +1,4 @@
-import { X, Menu, BookOpen, UserPlus, Calculator, Users, Receipt, Package, Building, Truck, ChevronDown } from 'lucide-react';
+import { X, Menu, BookOpen, UserPlus, Calculator, Users, Receipt, Package, Building, Truck, ChevronDown, Search } from 'lucide-react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useState, useEffect, useMemo } from 'react';
 import LanguageSelector from './LanguageSelector';
@@ -36,7 +36,6 @@ const Header = ({ searchQuery, setSearchQuery }) => {
       icon: <BookOpen size={20} />,
       link: "/introduction",
       dropdown: [
-        { title: "Disclaimer", link: "/disclaimer" },
         { title: "Foreword by the Commissioner General", link: "/foreword" },
         { title: "Introduction", link: "/introduction" },
         { title: "RRA Contact Details", link: "/rra-info" },
@@ -304,7 +303,8 @@ const Header = ({ searchQuery, setSearchQuery }) => {
                 )}
               </div>
               <button type="submit" className="search-button">
-                {t('header.searchButton')}
+                <span className="search-button-text">{t('header.searchButton')}</span>
+                <Search size={18} className="search-button-icon" />
               </button>
             </form>
           </div>
