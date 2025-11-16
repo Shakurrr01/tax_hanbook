@@ -63,7 +63,7 @@ const DeclaringImportsAndExport = () => {
                         There are two options available to taxpayers when importing through the Dar Es Salaam or Mombasa ports.
                     </p>
                     <p className="content-paragraph">
-                        Firstly, the full declaration process as explained on page 400 can be carried out at the port, including payment of Customs Duties and all necessary verifications.
+                        Firstly, the full declaration process as explained in this chapter can be carried out at the port, including payment of Customs Duties and all necessary verifications.
                     </p>
                     <p className="content-paragraph">
                         Alternatively, the process for when consignments are continuing to Dry Ports for declaration as explained above can be carried out at the port, including sealing the consignment and generating a Warehousing Document. The document are then checked again at the Border Post on the way to the Dry Port and new seals are added.

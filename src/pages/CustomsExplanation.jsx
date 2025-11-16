@@ -215,7 +215,7 @@ const CustomsExplanation = () => {
                         Rwandan exporters can apply for a Certificate of Origin through their Clearing Agent. The Clearing Agent applies on the Rwanda electronic Single Window (ReSW) and provides the required evidence at any Border Post or Dry Port. There are different fees and requirements depending upon the country to which the goods are exported. There is also a Simplified Certificate of Origin available for smaller value consignments, <Link to="/introduction">(check on Introduction)</Link> for more details.
                     </p>
                     <p className="content-paragraph">
-                        There are many incentives that Rwandan exporters can benefit from, depending on the country being exported to. This includes EAC, COMESA, and the European Union (EU), see the Export Handbook, referenced on page 402, for more details.
+                        There are many incentives that Rwandan exporters can benefit from, depending on the country being exported to. This includes EAC, COMESA, and the European Union (EU). For more details, contact RRA or visit the RRA website.
                     </p>
                 </section>
 

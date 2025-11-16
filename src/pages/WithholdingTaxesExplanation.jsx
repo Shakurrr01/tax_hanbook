@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FileText } from 'lucide-react';
 
 const WithholdingTaxesExplanation = () => {
@@ -28,7 +29,7 @@ const WithholdingTaxesExplanation = () => {
             It is important to note that although they are also technically types of withholding tax, this chapter does not concern Withholding tax on imports of 5% (WHT 5%), Pay As You Earn (PAYE), Gaming Tax or Mining Royalty Tax as these are declared and paid differently. For more details on these tax types, see their respective chapters in this Tax Handbook.
           </p>
           <p className="content-paragraph">
-            Finally, withholding tax of 15% on gambling proceeds is a type of WHT 15%, but the process of declaring is more similar to that of Gaming Tax. Therefore, this particular type of WHT 15% is mentioned briefly, but is covered in more detail in the Gaming Tax chapter on page 282.
+            Finally, withholding tax of 15% on gambling proceeds is a type of WHT 15%, but the process of declaring is more similar to that of Gaming Tax. Therefore, this particular type of WHT 15% is mentioned briefly, but is covered in more detail <Link to="/gaming-tax-explanation" className="content-link">(check on Gaming Tax Explanation)</Link> for more details.
           </p>
         </section>
 
@@ -61,7 +62,7 @@ const WithholdingTaxesExplanation = () => {
             <li>Public tender income</li>
           </ul>
           <p className="content-paragraph">
-            The definitions of each of these types of income are discussed in more detail on page 270.
+            The definitions of each of these types of income are discussed in more detail in this chapter.
           </p>
           <p className="content-paragraph">
             It is important to note that there are specific circumstances where some of these transactions may be subject to reduced withholding tax rates instead of 15% mostly because of double taxation avoidance agreements. Although the tax rate might be different, these are still referred to as WHT 15% in this Tax Handbook.
@@ -81,7 +82,7 @@ const WithholdingTaxesExplanation = () => {
             A Quitus Fiscal certificate is available, upon request, to taxpayers who have demonstrated a history of correct tax compliance. The benefit of Compliance Certificate (Quitus Fiscal) is that certified taxpayers are not required to have WHT 3% withheld and paid on their behalf.
           </p>
           <p className="content-paragraph">
-            The procedure and requirements for applying for a Quitus Fiscal certificate are listed in more detail on page 55.
+            The procedure and requirements for applying for a Quitus Fiscal certificate are listed in more detail <Link to="/certificates" className="content-link">(check on Certificates)</Link> for more details.
           </p>
         </section>
 
@@ -240,7 +241,7 @@ const WithholdingTaxesExplanation = () => {
             Gambling proceeds won by the player during gaming activities are subject to withholding tax of 15%. Gambling proceeds are defined as the difference between the winnings of a player and the amount of money invested by the player from the start until the end of the game.
           </p>
           <p className="content-paragraph">
-            The declaration process for Withholding Tax of 25% on gambling proceeds is similar to Gaming Tax. Therefore, this is covered in the Gaming Taxes chapter on page 282.
+            The declaration process for Withholding Tax of 25% on gambling proceeds is similar to Gaming Tax. Therefore, this is covered <Link to="/gaming-tax-explanation" className="content-link">(check on Gaming Tax Explanation)</Link> for more details.
           </p>
         </section>
 

@@ -20,7 +20,7 @@ const InstalmentPayments = () => {
         },
         {
           type: "paragraph",
-          text: "The process for declaring IQP using M-Declaration is explained on page 144. In addition, the process of declaring Motor Vehicle IQP using M-Declaration is explained on page 147."
+          text: "The process for declaring IQP using M-Declaration is explained <Link to=\"/m-declaration-flat-lump-iqp\" className=\"content-link\">(check on M-Declaration for Flat Tax, Lump Sum and IQP)</Link> for more details. In addition, the process of declaring Motor Vehicle IQP using M-Declaration is explained <Link to=\"/m-declaration-motor-vehicle\" className=\"content-link\">(check on M-Declaration for Motor Vehicle)</Link> for more details."
         },
         {
           type: "heading",
@@ -28,7 +28,7 @@ const InstalmentPayments = () => {
         },
         {
           type: "paragraph",
-          text: "The declaration process for IQP using E-Tax is similar to other domestic taxes, as explained on page 97. The process is the same whether declaring the tax type is PIT or CIT and for each of the regimes."
+          text: "The declaration process for IQP using E-Tax is similar to other domestic taxes, <Link to=\"/domestic-taxes\" className=\"content-link\">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more details. The process is the same whether declaring the tax type is PIT or CIT and for each of the regimes."
         },
         {
           type: "paragraph",
@@ -56,7 +56,7 @@ const InstalmentPayments = () => {
         },
         {
           type: "paragraph",
-          text: "The details required to enter the withholding tab are the same as described on page 152."
+          text: "The details required to enter the withholding tab are the same as described <Link to=\"/withholding-taxes-explanation\" className=\"content-link\">(check on Explanation of Withholding Taxes)</Link> for more details."
         },
         {
           type: "heading",
@@ -68,7 +68,7 @@ const InstalmentPayments = () => {
         },
         {
           type: "paragraph",
-          text: "The details required to enter the withholding tab are the same as described on page 153."
+          text: "The details required to enter the withholding tab are the same as described <Link to=\"/withholding-taxes-explanation\" className=\"content-link\">(check on Explanation of Withholding Taxes)</Link> for more details."
         },
         {
           type: "heading",

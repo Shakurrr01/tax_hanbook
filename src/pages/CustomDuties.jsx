@@ -23,7 +23,7 @@ const CustomDuties = () => {
                 <section className="content-section">
                     <h2>What are the different Customs Duties?</h2>
                     <p className="content-paragraph">
-                        The full list of customs duties is displayed on page 361. The rates and bases of each type are described below.
+                        The full list of customs duties is displayed in this chapter. The rates and bases of each type are described below.
                     </p>
 
                     <h3 style={{ marginTop: '1.5rem', color: 'var(--primary)' }}>Import Duty</h3>

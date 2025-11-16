@@ -25,6 +25,7 @@ import Registration from './pages/Registration';
 import DomesticTaxes from './pages/DomesticTaxes';
 import VAT from './pages/VAT';
 import ExciseExplanation from './pages/ExciseExplanation';
+import ExciseDeclaration from './pages/ExciseDeclaration';
 import WithholdingTaxes from './pages/WithholdingTaxes';
 import WithholdingTaxesExplanation from './pages/WithholdingTaxesExplanation';
 import WithholdingTaxesDeclaration from './pages/WithholdingTaxesDeclaration';
@@ -39,7 +40,7 @@ import MiningRoyaltyExplanation from './pages/MiningRoyaltyExplanation';
 import MiningRoyaltyDeclaration from './pages/MiningRoyaltyDeclaration';
 import CapitalGainsTaxExplanation from './pages/CapitalGainsTaxExplanation';
 import CapitalGainsTaxDeclaration from './pages/CapitalGainsTaxDeclaration';
-import LocalGovernmentTaxes from './pages/LocalGovernmentTaxes';
+import DecentralisedPenalties from './pages/DecentralisedPenalties';
 import DecentralisedEntities from './pages/DecentralisedEntities';
 import ImmovablePropertyTax from './pages/ImmovablePropertyTax';
 import TradingLicenseTax from './pages/TradingLicenseTax';
@@ -67,7 +68,16 @@ import EPaymentMobileMoney from './pages/EPaymentMobileMoney';
 import EPaymentMobicash from './pages/EPaymentMobicash';
 import PayingAtBank from './pages/PayingAtBank';
 import PayingTaxes from './pages/PayingTaxes';
-import Faqs from './pages/Faqs';
+import RegistrationSummary from './pages/RegistrationSummary';
+import DomesticETax from './pages/DomesticETax';
+import PitCitSum from './pages/PitCitSum';
+import PayeSum from './pages/PayeSum';
+import VatSum from './pages/VatSum';
+import EisSum from './pages/EisSum';
+import ExciseSum from './pages/ExciseSum';
+import WhtSum from './pages/WhtSum';
+import CustomsSum from './pages/CustomsSum';
+import PayingSum from './pages/PayingSum';
 import Deregistration from './pages/Deregistration';
 import SearchResults from './pages/SearchResults';
 import './App.css';
@@ -170,6 +180,7 @@ function App() {
                 <Route path="/vat" element={<VatLanding />} />
                 <Route path="/vat-original" element={<VAT />} />
                 <Route path="/excise-explanation" element={<ExciseExplanation />} />
+                <Route path="/excise-declaration" element={<ExciseDeclaration />} />
                 <Route path="/withholding-taxes" element={<WithholdingTaxes />} />
                 <Route path="/withholding-taxes-explanation" element={<WithholdingTaxesExplanation />} />
                 <Route path="/withholding-taxes-declaration" element={<WithholdingTaxesDeclaration />} />
@@ -180,7 +191,7 @@ function App() {
                 <Route path="/mining-royalty-declaration" element={<MiningRoyaltyDeclaration />} />
                 <Route path="/capital-gains-tax-explanation" element={<CapitalGainsTaxExplanation />} />
                 <Route path="/capital-gains-tax-declaration" element={<CapitalGainsTaxDeclaration />} />
-                <Route path="/local-government-taxes-original" element={<LocalGovernmentTaxes />} />
+                <Route path="/decentralisedpenalties" element={<DecentralisedPenalties />} />
                 <Route path="/decentralised-entities" element={<DecentralisedEntities />} />
                 <Route path="/immovable-property-tax" element={<ImmovablePropertyTax />} />
                 <Route path="/trading-license-tax" element={<TradingLicenseTax />} />
@@ -208,7 +219,16 @@ function App() {
                 <Route path="/e-payment-mobicash" element={<EPaymentMobicash />} />
                 <Route path="/paying-at-bank" element={<PayingAtBank />} />
                 <Route path="/paying-taxes" element={<PayingTaxes />} />
-                <Route path="/faqs" element={<Faqs />} />
+                <Route path="/registration-summary" element={<RegistrationSummary />} />
+                <Route path="/domestic-e-tax" element={<DomesticETax />} />
+                <Route path="/pit-cit-sum" element={<PitCitSum />} />
+                <Route path="/paye-sum" element={<PayeSum />} />
+                <Route path="/vat-sum" element={<VatSum />} />
+                <Route path="/eis-sum" element={<EisSum />} />
+                <Route path="/excise-sum" element={<ExciseSum />} />
+                <Route path="/wht-sum" element={<WhtSum />} />
+                <Route path="/customs-sum" element={<CustomsSum />} />
+                <Route path="/paying-sum" element={<PayingSum />} />
                 <Route path="/deregistration" element={<Deregistration />} />
                 <Route path="/search" element={<SearchResults searchQuery={searchQuery} />} />
                 <Route path="/other-taxes-entities" element={<OtherTaxesEntities />} />

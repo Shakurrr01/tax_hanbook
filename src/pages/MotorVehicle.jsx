@@ -35,7 +35,7 @@ const MotorVehicle = () => {
             The Transfer Fee is FRW 30,000 for motorcycles and FRW 60,000 for all other motor vehicles.
           </p>
           <p className="content-paragraph">
-            For transfer of motor vehicles with number plates that begin 'IT', 'CD' or 'UN' to new owners who do not have that status, <Link to="/importing-moto-vehicle">(check on Importing Motor Vehicles)</Link> for details on the customs duties that must also be paid.
+            For transfer of motor vehicles with number plates that begin 'IT', 'CD' or 'UN' to new owners who do not have that status, <Link to="/importing-moto-vehicle" className="content-link">(check on Importing Motor Vehicles)</Link> for details on the customs duties that must also be paid.
           </p>
         </section>
 
@@ -49,7 +49,7 @@ const MotorVehicle = () => {
             <li>Notarised Sale Contract (containing the date, location, value and the names, phone numbers, NID, identification of motor vehicles and signatures of both the buyer and seller). If done outside the country, Embassy and MINAFET may approval it.</li>
             <li>Registration Transfer Fee payment receipt (FRW 30,000-FRW 60,000)</li>
             <li>Latest Yellow Card and plate number for the motor vehicle</li>
-            <li>The buyer's TIN, <Link to="/registration-guide">(check on Registration Guide)</Link> for details</li>
+            <li>The buyer's TIN, <Link to="/registration-guide" className="content-link">(check on Registration Guide)</Link> for details</li>
             <li>Historical insurance information (only required if vehicle will be used as a business such as a taxi).</li>
             <li>No tax arrears of the vehicle</li>
           </ul>

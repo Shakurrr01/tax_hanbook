@@ -30,17 +30,17 @@ const DeclaringIQPIncomeTax = () => {
                 <section className="content-section">
                     <h2>Declaring IQP using M-Declaration</h2>
                     <p className="content-paragraph">
-                        The process for declaring IQP using M-Declaration is explained on page 144. In addition, the process of declaring Motor Vehicle IQP using M-Declaration is explained on page 147.
+                        The process for declaring IQP using M-Declaration is explained <Link to="/m-declaration-flat-lump-iqp" className="content-link">(check on M-Declaration for Flat Tax, Lump Sum and IQP)</Link> for more details. In addition, the process of declaring Motor Vehicle IQP using M-Declaration is explained <Link to="/m-declaration-motor-vehicle" className="content-link">(check on M-Declaration for Motor Vehicle)</Link> for more details.
                     </p>
                 </section>
 
                 <section className="content-section">
                     <h2>Declaring IQP using E-Tax</h2>
                     <p className="content-paragraph">
-                        The declaration process for IQP using E-Tax is similar to other domestic taxes, as explained on page 97. The process is the same whether declaring the tax type is PIT or CIT and for each of the regimes.
+                        The declaration process for IQP using E-Tax is similar to other domestic taxes, <Link to="/domestic-taxes" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more details. The process is the same whether declaring the tax type is PIT or CIT and for each of the regimes.
                     </p>
                     <p className="content-paragraph">
-                        Firstly, if the taxpayer has had any tax withheld and paid on their behalf during the tax period, they must download the IQP Annexures from the E-Tax website, <Link to="/domestic-taxes">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more detail on downloading annexures. The taxpayer must choose the relevant PIT or CIT annexure, but the details required are the same.
+                        Firstly, if the taxpayer has had any tax withheld and paid on their behalf during the tax period, they must download the IQP Annexures from the E-Tax website, <Link to="/domestic-taxes" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more detail on downloading annexures. The taxpayer must choose the relevant PIT or CIT annexure, but the details required are the same.
                     </p>
                     <p className="content-paragraph">
                         If the taxpayer has not had any tax withheld and paid on their behalf during the tax period, they can continue straight to the IQP declaration form below.
@@ -50,7 +50,7 @@ const DeclaringIQPIncomeTax = () => {
                 <section className="content-section">
                     <h2>Annexures</h2>
                     <p className="content-paragraph">
-                        The IQP annexure has two tabs. Only the tabs that are applicable in that tax period need to be completed, validated and saved. <Link to="/domestic-taxes">(check on Explanation of Domestic Taxes and E-Tax)</Link> if the taxpayer has any problems when validating annexures.
+                        The IQP annexure has two tabs. Only the tabs that are applicable in that tax period need to be completed, validated and saved. <Link to="/domestic-taxes" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> if the taxpayer has any problems when validating annexures.
                     </p>
 
                     <h3 style={{ marginTop: '2rem', color: 'var(--primary)' }}>5% Withholding Tab</h3>
@@ -58,7 +58,7 @@ const DeclaringIQPIncomeTax = () => {
                         This tab is applicable to any taxpayer who has paid withholding tax on imports of 5% (WHT 5%) during the tax period. This does not include any other types of withholding tax, which must be declared in the 'Withholding' tab.
                     </p>
                     <p className="content-paragraph">
-                        The details required to enter the withholding tab are the same as described on page 152.
+                        The details required to enter the withholding tab are the same as described <Link to="/withholding-taxes-explanation" className="content-link">(check on Explanation of Withholding Taxes)</Link> for more details.
                     </p>
 
                     <h3 style={{ marginTop: '2rem', color: 'var(--primary)' }}>Withholding Tab</h3>
@@ -66,14 +66,14 @@ const DeclaringIQPIncomeTax = () => {
                         This tab is applicable to any taxpayers who have had tax withheld and paid on their behalf during the tax period. This includes WHT 15%, WHT 3%, Gaming Tax and Mining Royalty Tax. This does not include WHT 5% on imports which is included in the 'Withholding 5%' tab.
                     </p>
                     <p className="content-paragraph">
-                        The details required to enter the withholding tab are the same as described on page 153.
+                        The details required to enter the withholding tab are the same as described <Link to="/withholding-taxes-explanation" className="content-link">(check on Explanation of Withholding Taxes)</Link> for more details.
                     </p>
                 </section>
 
                 <section className="content-section">
                     <h2>IQP Declaration Form</h2>
                     <p className="content-paragraph">
-                        After all applicable IQP annexures (if any) have been completed, validated and saved in the folder C:/RRA in the user's local machine, the taxpayer can return to E-Tax to complete the IQP declaration, <Link to="/domestic-taxes">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more detail on selecting the relevant declaration. The taxpayer must choose the relevant PIT or CIT declaration, but the details required are the same.
+                        After all applicable IQP annexures (if any) have been completed, validated and saved in the folder C:/RRA in the user's local machine, the taxpayer can return to E-Tax to complete the IQP declaration, <Link to="/domestic-taxes" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more detail on selecting the relevant declaration. The taxpayer must choose the relevant PIT or CIT declaration, but the details required are the same.
                     </p>
                     <p className="content-paragraph">
                         The IQP declaration form requires data on:
@@ -111,7 +111,7 @@ const DeclaringIQPIncomeTax = () => {
                         After saving the IQP regime declaration form, if the taxpayer has not had any tax withheld and paid on their behalf during the tax period, click 'Submit without Annexures' to submit the declaration.
                     </p>
                     <p className="content-paragraph">
-                        If the taxpayer has had any tax withheld and paid on their behalf during the tax period, upload the IQP annexures and then compare with the declaration form, <Link to="/domestic-taxes">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more detail on uploading annexures and comparing with declaration forms.
+                        If the taxpayer has had any tax withheld and paid on their behalf during the tax period, upload the IQP annexures and then compare with the declaration form, <Link to="/domestic-taxes" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more detail on uploading annexures and comparing with declaration forms.
                     </p>
                     <div style={{ margin: '2rem 1rem', padding: '1rem', backgroundColor: '#b5cbee', borderRadius: '0.5rem' }}>
                         <h3 style={{ marginTop: 0, color: 'var(--primary)' }}>Example 26</h3>
@@ -151,7 +151,7 @@ const DeclaringIQPIncomeTax = () => {
                         </ImageModal>
                     </div>
                     <p className="content-paragraph">
-                        Click to 'View Acknowledgement Receipt' to view the RRA reference number and the total tax due that are required for payment. <Link to="/methods-of-paying-taxes">(check on Methods of Paying Taxes)</Link> for more details on paying taxes. Remember that payment must also be made before the deadline to avoid penalties and fines.
+                        Click to 'View Acknowledgement Receipt' to view the RRA reference number and the total tax due that are required for payment. <Link to="/methods-of-paying-taxes" className="content-link">(check on Methods of Paying Taxes)</Link> for more details on paying taxes. Remember that payment must also be made before the deadline to avoid penalties and fines.
                     </p>
                 </section>
             </div>

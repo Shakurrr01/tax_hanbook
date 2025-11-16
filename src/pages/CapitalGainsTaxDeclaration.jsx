@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FileText } from 'lucide-react';
 
 const CapitalGainsTaxDeclaration = () => {
@@ -21,7 +22,7 @@ const CapitalGainsTaxDeclaration = () => {
             <div className="page-content">
                 <section className="content-section">
                     <p className="content-paragraph">
-                        The declaration process for Capital Gains Tax is the same as for other Withholding Taxes as explained on page 276. The 'Withholdings' tab of the Withholding annexure must be completed, validated and saved as normal.
+                        The declaration process for Capital Gains Tax is the same as for other Withholding Taxes, <Link to="/withholding-taxes-explanation" className="content-link">(check on Explanation of Withholding Taxes)</Link> for more details. The 'Withholdings' tab of the Withholding annexure must be completed, validated and saved as normal.
                     </p>
                     <p className="content-paragraph">
                         The Capital Gains declaration form is selected by choosing 'WOP – CAPITAL GAINS'. Complete the declaration form, upload the annexure and submit the declaration as normal.

@@ -22,7 +22,7 @@ const GamingTaxPenalties = () => {
             <div className="page-content">
                 <section className="content-section">
                     <p className="content-paragraph">
-                        The penalties and fines for gaming taxes are similar to other domestic taxes, as explained on page 109. This includes penalties and fines for:
+                        The penalties and fines for gaming taxes are similar to other domestic taxes, <Link to="/domestic-penalties" className="content-link">(check on Domestic Taxes Penalties and Fines)</Link> for more details. This includes penalties and fines for:
                     </p>
                     <ul className="content-list">
                         <li>Late declaration</li>
@@ -31,10 +31,10 @@ const GamingTaxPenalties = () => {
                         <li>Paying less than the tax due declared</li>
                     </ul>
                     <p className="content-paragraph">
-                        The rules concerning interest, administrative fines and repeat offenders are also as explained on page 116.
+                        The rules concerning interest, administrative fines and repeat offenders are also as explained <Link to="/domestic-penalties" className="content-link">(check on Domestic Taxes Penalties and Fines)</Link> for more details.
                     </p>
                     <p className="content-paragraph">
-                        The additional penalties and fines applicable to Gaming Taxes are the same as those concerning other types of withholding taxes, <Link to="/withholding-taxes-explanation">(check on Explanation of Withholding Taxes)</Link> for more details.
+                        The additional penalties and fines applicable to Gaming Taxes are the same as those concerning other types of withholding taxes, <Link to="/withholding-taxes-explanation" className="content-link">(check on Explanation of Withholding Taxes)</Link> for more details.
                     </p>
                     <p className="content-paragraph">
                         It is important to note that these penalties apply separately to both Gaming Tax and Withholding Tax of 25% on Gambling Proceeds. Failure to declare or pay any one tax type will result in penalties and fines applying to only that particular tax type. Failure to declare or pay both tax types will result in penalties and fines applying to both tax types.

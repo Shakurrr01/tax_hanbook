@@ -27,7 +27,7 @@ const BorderPortsAndDryPorts = () => {
                         Importing and exporting of goods can only be done at authorised customs border posts, customs offices outside Rwanda, virtual offices in partner states and dry ports. Border posts are customs offices at the border with a neighbouring country, whilst dry ports are inland customs offices. There are RRA customs offices outside Rwanda at Dar Es Salaam, Eldoret and Mombasa.
                     </p>
                     <p className="content-paragraph">
-                        The list of currently operating customs border posts and dry ports is displayed on page 392. However, Customs Administration is receptive to taxpayers' behaviour, and may open or close border posts depending upon demand and the frequency of trade. Taxpayers may contact customs to request to import or export through other potential border posts.
+                        The list of currently operating customs border posts and dry ports is displayed in this chapter. However, Customs Administration is receptive to taxpayers' behaviour, and may open or close border posts depending upon demand and the frequency of trade. Taxpayers may contact customs to request to import or export through other potential border posts.
                     </p>
                 </section>
 
@@ -69,7 +69,7 @@ const BorderPortsAndDryPorts = () => {
                         There are three situations when imports must be declared at inland border posts.
                     </p>
                     <p className="content-paragraph">
-                        Firstly, dry ports must be used when importing at a border goods above a certain value. The import value threshold varies depending upon the capacity of the border post, see the list of border posts on page 392.
+                        Firstly, dry ports must be used when importing at a border goods above a certain value. The import value threshold varies depending upon the capacity of the border post, see the list of border posts in this chapter.
                     </p>
                     <p className="content-paragraph">
                         The main dry port for this use is Dubai Port World in Kigali - Masaka. However, Rubavu Inland Office and Mutara are also used for this purpose for imports into Gisenyi and Rusizi border posts respectively.

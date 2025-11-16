@@ -62,7 +62,7 @@ const DomesticTaxes = () => {
         <section className="content-section">
           <h2>What is M-Declaration?</h2>
           <p className="content-paragraph">
-            In certain cases, Income Tax can also be declared on mobile phones using M-Declaration, <Link to="/m-declaration-flat-lump-iqp">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more details on declaring Income Tax using M-Declaration.
+            In certain cases, Income Tax can also be declared on mobile phones using M-Declaration, <Link to="/m-declaration-flat-lump-iqp" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more details on declaring Income Tax using M-Declaration.
           </p>
           <p className="content-paragraph">
             However, the majority of domestic taxes can only be declared using E-Tax. Therefore, this chapter focuses on the E-Tax process.
@@ -154,7 +154,7 @@ const DomesticTaxes = () => {
             <li>try using a Windows computer instead of a Mac.</li>
             <li>click to 'Validate' and save the annexure.</li>
           </ul>
-          <p className="content-paragraph"><Link to="/domestic-taxes">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more details on solving these problems.</p>
+          <p className="content-paragraph"><Link to="/domestic-taxes" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more details on solving these problems.</p>
         </section>
 
         <section className="content-section">
@@ -170,7 +170,7 @@ const DomesticTaxes = () => {
             When submitting declarations: the annexures must be uploaded, its information equals to the declaration form information, and all certified by clicking in certifying box.
           </p>
           <p className="content-paragraph">
-            If the declaration and annexures information are not equal, either the declaration or the annexures must then be changed until they are equal and accurate, <Link to="/domestic-taxes">(check on Explanation of Domestic Taxes and E-Tax)</Link> for details.
+            If the declaration and annexures information are not equal, either the declaration or the annexures must then be changed until they are equal and accurate, <Link to="/domestic-taxes" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for details.
           </p>
         </section>
       </div>

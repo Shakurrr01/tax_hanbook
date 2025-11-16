@@ -26,7 +26,7 @@ const GamingTaxDeclaration = () => {
                         Gaming Tax (40%) and Withholding Tax of 25% on Gambling Proceeds (WOP-Gaming) must each be declared separately, but in a similar manner.
                     </p>
                     <p className="content-paragraph">
-                        The declaration process for gaming taxes is similar to other domestic taxes, see the guide to Declaring Domestic Taxes using E-Tax on page 95 for more details.
+                        The declaration process for gaming taxes is similar to other domestic taxes, <Link to="/domestic-taxes" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more details.
                     </p>
                 </section>
 

@@ -38,7 +38,7 @@ const Certificates = () => {
             The Foreign Tax Credit certificate is available for taxpayers to prove that they have paid taxes in Rwanda. The Foreign Tax Credit certificate must be requested from RRA offices, and is processed on a case-by-case basis.
           </p>
           <p className="content-paragraph">
-            The Trading License Tax certificate is discussed in more detail in the Local Government Taxes (LGT) and fees chapter on page 316.
+            The Trading License Tax certificate is discussed in more detail <Link to="/trading-license-tax" className="content-link">(check on Trading License Tax)</Link> for more details.
           </p>
           <p className="content-paragraph">
             The remaining four types of certificates are discussed in this chapter below.
@@ -49,15 +49,15 @@ const Certificates = () => {
         <section className="content-section">
           <h2>What is Value Added Tax (VAT) certificates?</h2>
           <p className="content-paragraph">
-            VAT certificates certify that the taxpayer is registered for VAT. All VAT registered taxpayers are required to clearly display the VAT registration certificate in plain view at their main place of business. <Link to="/vat-explanation">(check on Explanation of VAT)</Link> for the details of registering for VAT and the obligations of VAT-registered taxpayers.
+            VAT certificates certify that the taxpayer is registered for VAT. All VAT registered taxpayers are required to clearly display the VAT registration certificate in plain view at their main place of business. <Link to="/vat-explanation" className="content-link">(check on Explanation of VAT)</Link> for the details of registering for VAT and the obligations of VAT-registered taxpayers.
           </p>
           <p className="content-paragraph">
             VAT certificates are available free of charge. They can be obtained through three channels:
           </p>
           <ul className="content-list">
-            <li>The Rwanda Development Board (RDB) system during business registration, <Link to="/registration-guide">(check on Step-by-Step Guide to Business Registration)</Link>.</li>
-            <li>Through the E-Tax homepage, <Link to="/domestic-taxes">(check on Explanation of Domestic Taxes and E-Tax)</Link> for details on logging into E-Tax. After clicking on 'TCC Request', the process is the same as described <Link to="/certificates">(check on Certificates – VAT, Compliance Certificates and Tax Clearance Certificates (TCCs))</Link> below.</li>
-            <li>Through the RRA website, <Link to="/certificates">(check on Certificates – VAT, Compliance Certificates and Tax Clearance Certificates (TCCs))</Link> below for more details.</li>
+            <li>The Rwanda Development Board (RDB) system during business registration, <Link to="/registration-guide" className="content-link">(check on Step-by-Step Guide to Business Registration)</Link>.</li>
+            <li>Through the E-Tax homepage, <Link to="/domestic-taxes" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for details on logging into E-Tax. After clicking on 'TCC Request', the process is the same as described <Link to="/certificates" className="content-link">(check on Certificates – VAT, Compliance Certificates and Tax Clearance Certificates (TCCs))</Link> below.</li>
+            <li>Through the RRA website, <Link to="/certificates" className="content-link">(check on Certificates – VAT, Compliance Certificates and Tax Clearance Certificates (TCCs))</Link> below for more details.</li>
           </ul>
         </section>
 
@@ -81,13 +81,13 @@ const Certificates = () => {
         <section className="content-section">
           <h2>What is Compliance Certificate (Quitus Fiscal)?</h2>
           <p className="content-paragraph">
-            Compliance Certificate (Quitus Fiscal) is a privileged status available, upon request, to taxpayers who have a good compliance record with RRA. Compliance Certificate (Quitus Fiscal) is proof of this status. There are two types of Quitus Fiscal, for withholding tax on public tenders of 3% (WHT 3%) and for withholding tax on imports of 5% and public tenders of 3% (WHT 5% & 3%). For more details on the interaction of Compliance Certificate (Quitus Fiscal) on WHT 3% and WHT 5% & 3%, <Link to="/withholding-taxes-explanation">(check on Explanation of Withholding Taxes)</Link> and <Link to="/importing-moto-vehicle">(check on Importing Motor Vehicles)</Link> respectively.
+            Compliance Certificate (Quitus Fiscal) is a privileged status available, upon request, to taxpayers who have a good compliance record with RRA. Compliance Certificate (Quitus Fiscal) is proof of this status. There are two types of Quitus Fiscal, for withholding tax on public tenders of 3% (WHT 3%) and for withholding tax on imports of 5% and public tenders of 3% (WHT 5% & 3%). For more details on the interaction of Compliance Certificate (Quitus Fiscal) on WHT 3% and WHT 5% & 3%, <Link to="/withholding-taxes-explanation" className="content-link">(check on Explanation of Withholding Taxes)</Link> and <Link to="/importing-moto-vehicle" className="content-link">(check on Importing Motor Vehicles)</Link> respectively.
           </p>
           <p className="content-paragraph">
             Taxpayers with Compliance Certificate (Quitus Fiscal) are not required to pay WHT 5%, or have WHT 3% withheld and paid on their behalf, depending upon the type of Compliance Certificate (Quitus Fiscal). This does not reduce the overall tax payable by the taxpayer, as any income from imports or public tenders are required to be declared in the annual Income Tax (PIT or CIT) declarations. However, Compliance Certificate (Quitus Fiscal) benefit their cash flow as the taxes do not have to be paid up front.
           </p>
           <p className="content-paragraph">
-            The cost of applying for Compliance Certificate (Quitus Fiscal) is FRW 10,000. The process of applying for Compliance Certificate (Quitus Fiscal) is described on page 57 below.
+            The cost of applying for Compliance Certificate (Quitus Fiscal) is FRW 10,000. The process of applying for Compliance Certificate (Quitus Fiscal) is described below.
           </p>
           <p className="content-paragraph">
             There is a distinction between Compliance Certificate (Quitus Fiscal) and Tax Clearance Certificate, as described below.
@@ -101,7 +101,7 @@ const Certificates = () => {
             Tax Clearance Certificates (TCCs) are available, upon online request through E-Tax, to prove that taxpayers have no unpaid arrears with RRA. This may be needed in order to bid for public tenders, apply for bank loans or a range of other reasons.
           </p>
           <p className="content-paragraph">
-            The cost of applying for TCCs is FRW 5,000. The process of applying for TCCs is described on page 57 below.
+            The cost of applying for TCCs is FRW 5,000. The process of applying for TCCs is described below.
           </p>
         </section>
 
@@ -139,7 +139,7 @@ const Certificates = () => {
             </ImageModal>
           </div>
           <p className="content-paragraph">
-            If the taxpayer selects 'QUITUS', they must also select '3%' or '5% & 3%' from the 'Quitus Certificate Type' drop-down menu. This refers to the type of Withholding Tax from which they wish to be exempted, <Link to="/withholding-taxes-explanation">(check on Explanation of Withholding Taxes)</Link> for details. Additional required documents and in the following screen:
+            If the taxpayer selects 'QUITUS', they must also select '3%' or '5% & 3%' from the 'Quitus Certificate Type' drop-down menu. This refers to the type of Withholding Tax from which they wish to be exempted, <Link to="/withholding-taxes-explanation" className="content-link">(check on Explanation of Withholding Taxes)</Link> for details. Additional required documents and in the following screen:
           </p>
           <div className="certificate-image-container" style={{ margin: '1.5rem 0', textAlign: 'center' }}>
             <ImageModal src="./images/certificate_04.png" alt="QUITUS additional documents screen">

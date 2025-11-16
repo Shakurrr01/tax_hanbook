@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FileText } from 'lucide-react';
 
 const TourismTaxDeclaration = () => {
@@ -21,7 +22,7 @@ const TourismTaxDeclaration = () => {
       <div className="page-content">
         <section className="content-section">
           <p className="content-paragraph">
-            The declaration process for Tourism Tax is the same as for other Taxes as explained on page 281. The 'Tourism' tab must be completed, validated and saved as normal.
+            The declaration process for Tourism Tax is the same as for other Taxes, <Link to="/domestic-taxes" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more details. The 'Tourism' tab must be completed, validated and saved as normal.
           </p>
           <p className="content-paragraph">
             The Tourism Tax declaration form is selected by choosing 'Tourism Tax'. Complete the declaration form, upload the annexure and submit the declaration as normal.

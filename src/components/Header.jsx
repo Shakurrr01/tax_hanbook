@@ -14,6 +14,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
   const { t } = useTranslations(currentLanguage);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeSubmenu, setActiveSubmenu] = useState(null);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -28,6 +29,12 @@ const Header = ({ searchQuery, setSearchQuery }) => {
 
   const toggleDropdown = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
+    setActiveSubmenu(null); // Close any open submenu when opening/closing main dropdown
+  };
+
+  const toggleSubmenu = (parentIndex, submenuIndex) => {
+    const key = `${parentIndex}-${submenuIndex}`;
+    setActiveSubmenu(activeSubmenu === key ? null : key);
   };
 
   const menuItems = useMemo(() => [
@@ -73,107 +80,97 @@ const Header = ({ searchQuery, setSearchQuery }) => {
       dropdown: [
         { title: "Explanation of Domestic Taxes and E-Tax", link: "/domestic-taxes" },
         { title: "Step-by-Step guide to declaring domestic taxes", link: "/domestic-declaration" },
-        { title: "Domestic Taxes Penalties and Fines", link: "/domestic-penalties" }
-      ]
-    },
-    {
-      title: "Income Tax (PIT and CIT)",
-      icon: <Calculator size={20} />,
-      link: "/income-tax-explanation",
-      dropdown: [
-        { title: "Explanation of Income Tax", link: "/income-tax-explanation" },
-        { title: "Real Regime Details", link: "/real-regime-details" },
-        { title: "Declaring Flat Tax, Lump Sum and IQP Income Tax using M-Declaration", link: "/declaring-flat-tax-lump-sum-iqp" },
-        { title: "Declaring Motor Vehicle Income Tax using M-Declaration", link: "/declaring-motor-vehicle-income-tax" },
-        { title: "Declaring Flat Tax Income Tax using E-Tax", link: "/declaring-flat-tax-e-tax" },
-        { title: "Declaring Lump Sum Income Tax using E-Tax", link: "/declaring-lump-sum-e-tax" },
-        { title: "Declaring Real Regime Income Tax using E-Tax", link: "/declaring-real-regime-e-tax" },
-        { title: "Declaring Instalment Quarterly Prepayment (IQP) Income Tax", link: "/declaring-iqp-income-tax" }
-      ]
-    },
-    {
-      title: "Pay As You Earn (PAYE)",
-      icon: <Users size={20} />,
-      link: "/paye-explanation",
-      dropdown: [
-        { title: "Explanation of PAYE", link: "/paye-explanation" },
-        { title: "Declaring PAYE", link: "/paye-declaration" }
-      ]
-    },
-    {
-      title: "Value Added Tax (VAT)",
-      icon: <Receipt size={20} />,
-      link: "/vat",
-      dropdown: [
-        { title: "Explanation of VAT", link: "/vat-explanation" },
-        { title: "Declaring VAT", link: "/vat-declaration" }
-      ]
-    },
-    {
-      title: "Electronic Invoicing System (EIS)",
-      icon: <Package size={20} />,
-      link: "/electronic-invoicing-system-explanation",
-      dropdown: [
-        { title: "Explanation of Electronic Invoicing System", link: "/electronic-invoicing-system-explanation" },
-        { title: "EIS/EBMs Penalties and Fines", link: "/eis-ebms-penalties" }
-      ]
-    },
-    {
-      title: "Excise Duty",
-      icon: <Package size={20} />,
-      link: "/excise-explanation",
-      dropdown: [
-        { title: "Explanation of Excise Duty", link: "/excise-explanation" },
-        { title: "Declaring Excise Duty", link: "/excise-explanation" }
-      ]
-    },
-    {
-      title: "Withholding Taxes (WHT 15% and WHT 3%)",
-      icon: <Package size={20} />,
-      link: "/withholding-taxes-explanation",
-      dropdown: [
-        { title: "Explanation of Withholding Taxes", link: "/withholding-taxes-explanation" },
-        { title: "Declaring Withholding Taxes (WHT 15% and WHT 3%)", link: "/withholding-taxes-declaration" }
-      ]
-    },
-    {
-      title: "Gaming Taxes",
-      icon: <Package size={20} />,
-      link: "/gaming-tax-explanation",
-      dropdown: [
-        { title: "Explanation of Gaming Taxes", link: "/gaming-tax-explanation" },
-        { title: "Declaring Gaming Taxes", link: "/gaming-tax-declaration" },
-        { title: "Gaming Taxes Penalties and Fines", link: "/gaming-tax-penalties" },
-        { title: "Mining Royalty Tax", link: "/mining-royalty-explanation" },
-        { title: "Explanation of Mining Royalty Tax", link: "/mining-royalty-explanation" },
-        { title: "Declaring Mining Royalty Tax", link: "/mining-royalty-declaration" }
-      ]
-    },
-    {
-      title: "Capital Gains Tax",
-      icon: <Package size={20} />,
-      link: "/capital-gains-tax-explanation",
-      dropdown: [
-        { title: "Explanation of Capital Gains Tax", link: "/capital-gains-tax-explanation" },
-        { title: "Declaring Capital Gains Tax", link: "/capital-gains-tax-declaration" }
-      ]
-    },
-    {
-      title: "Road Maintenance Levy",
-      icon: <Package size={20} />,
-      link: "/road-maintenance-explanation",
-      dropdown: [
-        { title: "Explanation of Road Maintenance Levy", link: "/road-maintenance-explanation" },
-        { title: "Declaring Road Maintenance Levy", link: "/road-maintenance-declaration" }
-      ]
-    },
-    {
-      title: "Tourism Tax",
-      icon: <Package size={20} />,
-      link: "/tourism-tax-explanation",
-      dropdown: [
-        { title: "Explanation of Tourism Tax", link: "/tourism-tax-explanation" },
-        { title: "Declaring Tourism Tax", link: "/tourism-tax-declaration" }
+        { title: "Domestic Taxes Penalties and Fines", link: "/domestic-penalties" },
+        {
+          title: "Income Tax (PIT and CIT)",
+          link: "/income-tax-explanation",
+          submenu: [
+            { title: "Explanation of Income Tax", link: "/income-tax-explanation" },
+            { title: "Real Regime Details", link: "/real-regime-details" },
+            { title: "Declaring Flat Tax, Lump Sum and IQP Income Tax using M-Declaration", link: "/declaring-flat-tax-lump-sum-iqp" },
+            { title: "Declaring Motor Vehicle Income Tax using M-Declaration", link: "/declaring-motor-vehicle-income-tax" },
+            { title: "Declaring Flat Tax Income Tax using E-Tax", link: "/declaring-flat-tax-e-tax" },
+            { title: "Declaring Lump Sum Income Tax using E-Tax", link: "/declaring-lump-sum-e-tax" },
+            { title: "Declaring Real Regime Income Tax using E-Tax", link: "/declaring-real-regime-e-tax" },
+            { title: "Declaring Instalment Quarterly Prepayment (IQP) Income Tax", link: "/declaring-iqp-income-tax" }
+          ]
+        },
+        {
+          title: "Pay As You Earn (PAYE)",
+          link: "/paye-explanation",
+          submenu: [
+            { title: "Explanation of PAYE", link: "/paye-explanation" },
+            { title: "Declaring PAYE", link: "/paye-declaration" }
+          ]
+        },
+        {
+          title: "Value Added Tax (VAT)",
+          link: "/vat-explanation",
+          submenu: [
+            { title: "Explanation of VAT", link: "/vat-explanation" },
+            { title: "Declaring VAT", link: "/vat-declaration" }
+          ]
+        },
+        {
+          title: "Electronic Invoicing System (EIS)",
+          link: "/electronic-invoicing-system-explanation",
+          submenu: [
+            { title: "Explanation of Electronic Invoicing System", link: "/electronic-invoicing-system-explanation" },
+            { title: "EIS/EBMs Penalties and Fines", link: "/eis-ebms-penalties" }
+          ]
+        },
+        {
+          title: "Excise Duty",
+          link: "/excise-explanation",
+          submenu: [
+            { title: "Explanation of Excise Duty", link: "/excise-explanation" },
+            { title: "Declaring Excise Duty", link: "/excise-declaration" }
+          ]
+        },
+        {
+          title: "Withholding Taxes (WHT 15% and WHT 3%)",
+          link: "/withholding-taxes-explanation",
+          submenu: [
+            { title: "Explanation of Withholding Taxes", link: "/withholding-taxes-explanation" },
+            { title: "Declaring Withholding Taxes (WHT 15% and WHT 3%)", link: "/withholding-taxes-declaration" }
+          ]
+        },
+        {
+          title: "Gaming Taxes",
+          link: "/gaming-tax-explanation",
+          submenu: [
+            { title: "Explanation of Gaming Taxes", link: "/gaming-tax-explanation" },
+            { title: "Declaring Gaming Taxes", link: "/gaming-tax-declaration" },
+            { title: "Gaming Taxes Penalties and Fines", link: "/gaming-tax-penalties" },
+            { title: "Mining Royalty Tax", link: "/mining-royalty-explanation" },
+            { title: "Explanation of Mining Royalty Tax", link: "/mining-royalty-explanation" },
+            { title: "Declaring Mining Royalty Tax", link: "/mining-royalty-declaration" }
+          ]
+        },
+        {
+          title: "Capital Gains Tax",
+          link: "/capital-gains-tax-explanation",
+          submenu: [
+            { title: "Explanation of Capital Gains Tax", link: "/capital-gains-tax-explanation" },
+            { title: "Declaring Capital Gains Tax", link: "/capital-gains-tax-declaration" }
+          ]
+        },
+        {
+          title: "Road Maintenance Levy",
+          link: "/road-maintenance-explanation",
+          submenu: [
+            { title: "Explanation of Road Maintenance Levy", link: "/road-maintenance-explanation" },
+            { title: "Declaring Road Maintenance Levy", link: "/road-maintenance-declaration" }
+          ]
+        },
+        {
+          title: "Tourism Tax",
+          link: "/tourism-tax-explanation",
+          submenu: [
+            { title: "Explanation of Tourism Tax", link: "/tourism-tax-explanation" },
+            { title: "Declaring Tourism Tax", link: "/tourism-tax-declaration" }
+          ]
+        }
       ]
     },
     {
@@ -189,7 +186,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
         { title: "Tax Centres", link: "/tax-centres" },
         { title: "Registering for Decentralised Entities Taxes and Fees", link: "/registering-decentralised-entities" },
         { title: "Declaring Decentralised Entities Taxes and Fees using the LGT system", link: "/declaring-decentralised-entities-lgt" },
-        { title: "Decentralised Entities Taxes and Fees Penalties and Fines", link: "/local-government-taxes-original" }
+        { title: "Decentralised Entities Taxes and Fees Penalties and Fines", link: "/decentralisedpenalties" }
       ]
     },
     {
@@ -231,9 +228,18 @@ const Header = ({ searchQuery, setSearchQuery }) => {
     {
       title: "FAQs",
       icon: <BookOpen size={20} />,
-      link: "/faqs",
+      link: "/registration-summary",
       dropdown: [
-        { title: "Summary Pages", link: "/faqs" }
+        { title: "FAQ on Registration", link: "/registration-summary" },
+        { title: "FAQ onDomestic Taxes and E-Tax Summary", link: "/domestic-e-tax" },
+        { title: "FAQ on Income Tax (PIT and CIT)", link: "/pit-cit-sum" },
+        { title: "FAQ on Pay As You Earn (PAYE)", link: "/paye-sum" },
+        { title: "FAQ on Value Added Tax (VAT)", link: "/vat-sum" },
+        { title: "FAQ On Electronic Invoicing System (EIS)", link: "/eis-sum" },
+        { title: "FAQ on Excise Duty", link: "/excise-sum" },
+        { title: "FAQ on Withholding Taxes", link: "/wht-sum" },
+        { title: "FAQ on Customs", link: "/customs-sum" },
+        { title: "FAQ on Paying Taxes", link: "/paying-sum" }
       ]
     }
   ], []);
@@ -244,7 +250,13 @@ const Header = ({ searchQuery, setSearchQuery }) => {
       return true;
     }
     if (item.dropdown) {
-      return item.dropdown.some(subItem => location.pathname === subItem.link);
+      return item.dropdown.some(subItem => {
+        if (subItem.link && location.pathname === subItem.link) return true;
+        if (subItem.submenu) {
+          return subItem.submenu.some(subSubItem => location.pathname === subSubItem.link);
+        }
+        return false;
+      });
     }
     return false;
   };
@@ -253,11 +265,27 @@ const Header = ({ searchQuery, setSearchQuery }) => {
     return location.pathname === link;
   };
 
+  const hasActiveSubmenuItem = (submenu) => {
+    if (!submenu) return false;
+    return submenu.some(item => location.pathname === item.link);
+  };
+
   // Auto-expand dropdown if a child is active
   useEffect(() => {
     menuItems.forEach((item, index) => {
-      if (item.dropdown && item.dropdown.some(subItem => location.pathname === subItem.link)) {
-        setActiveDropdown(index);
+      if (item.dropdown) {
+        item.dropdown.forEach((subItem, subIndex) => {
+          if (subItem.link && location.pathname === subItem.link) {
+            setActiveDropdown(index);
+            if (subItem.submenu) {
+              setActiveSubmenu(`${index}-${subIndex}`);
+            }
+          }
+          if (subItem.submenu && subItem.submenu.some(subSubItem => location.pathname === subSubItem.link)) {
+            setActiveDropdown(index);
+            setActiveSubmenu(`${index}-${subIndex}`);
+          }
+        });
       }
     });
   }, [location.pathname, menuItems]);
@@ -337,17 +365,71 @@ const Header = ({ searchQuery, setSearchQuery }) => {
                   </button>
                   <div className={`sidebar-dropdown-menu ${activeDropdown === index ? 'sidebar-dropdown-open' : ''}`}>
                     {item.dropdown.map((subItem, subIndex) => (
-                      <Link
-                        key={subIndex}
-                        to={subItem.link}
-                        className={`sidebar-dropdown-link ${isDropdownItemActive(subItem.link) ? 'sidebar-dropdown-link-active' : ''}`}
-                        onClick={() => {
-                          setIsMenuOpen(false);
-                          setActiveDropdown(null);
-                        }}
-                      >
-                        {subItem.title}
-                      </Link>
+                      <div key={subIndex} className="sidebar-dropdown-item-wrapper">
+                        {subItem.submenu ? (
+                          <>
+                            <div className="sidebar-dropdown-link sidebar-dropdown-link-with-submenu">
+                              {subItem.link ? (
+                                <Link
+                                  to={subItem.link}
+                                  className={`sidebar-dropdown-link-text ${hasActiveSubmenuItem(subItem.submenu) || isDropdownItemActive(subItem.link) ? 'sidebar-dropdown-link-active' : ''}`}
+                                  onClick={() => {
+                                    setIsMenuOpen(false);
+                                    setActiveDropdown(null);
+                                    setActiveSubmenu(null);
+                                  }}
+                                >
+                                  {subItem.title}
+                                </Link>
+                              ) : (
+                                <span className="sidebar-dropdown-link-text">{subItem.title}</span>
+                              )}
+                              <button
+                                className="sidebar-submenu-toggle"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  e.stopPropagation();
+                                  toggleSubmenu(index, subIndex);
+                                }}
+                                aria-label="Toggle submenu"
+                              >
+                                <ChevronDown
+                                  size={14}
+                                  className={`dropdown-arrow dropdown-arrow-nested ${activeSubmenu === `${index}-${subIndex}` ? 'dropdown-arrow-open' : ''}`}
+                                />
+                              </button>
+                            </div>
+                            <div className={`sidebar-submenu ${activeSubmenu === `${index}-${subIndex}` ? 'sidebar-submenu-open' : ''}`}>
+                              {subItem.submenu.map((subSubItem, subSubIndex) => (
+                                <Link
+                                  key={subSubIndex}
+                                  to={subSubItem.link}
+                                  className={`sidebar-dropdown-link sidebar-submenu-link ${isDropdownItemActive(subSubItem.link) ? 'sidebar-dropdown-link-active' : ''}`}
+                                  onClick={() => {
+                                    setIsMenuOpen(false);
+                                    setActiveDropdown(null);
+                                    setActiveSubmenu(null);
+                                  }}
+                                >
+                                  {subSubItem.title}
+                                </Link>
+                              ))}
+                            </div>
+                          </>
+                        ) : (
+                          <Link
+                            to={subItem.link}
+                            className={`sidebar-dropdown-link ${isDropdownItemActive(subItem.link) ? 'sidebar-dropdown-link-active' : ''}`}
+                            onClick={() => {
+                              setIsMenuOpen(false);
+                              setActiveDropdown(null);
+                              setActiveSubmenu(null);
+                            }}
+                          >
+                            {subItem.title}
+                          </Link>
+                        )}
+                      </div>
                     ))}
                   </div>
                 </div>

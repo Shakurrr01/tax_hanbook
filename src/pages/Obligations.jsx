@@ -49,7 +49,7 @@ const Obligations = () => {
             Taxpayers with annual turnover above FRW 20,000,000 must also keep a record of assets and liabilities, records of daily income and expenses, records of stock inventory at the end of the period and information related to controlled transactions.
           </p>
           <p className="content-paragraph">
-            Taxpayers with annual turnover above FRW 20,000,000 must register for VAT; must also declare Real Regime Income Tax and follow the additional bookkeeping requirements, <Link to="/real-regime-details">(check on Real regime details)</Link>.
+            Taxpayers with annual turnover above FRW 20,000,000 must register for VAT; must also declare Real Regime Income Tax and follow the additional bookkeeping requirements, <Link to="/real-regime-details" className="content-link">(check on Real regime details)</Link>.
           </p>
         </section>
 

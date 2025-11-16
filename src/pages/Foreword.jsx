@@ -65,10 +65,7 @@ const Foreword = () => {
                                         <Building size={14} />
                                         <span>Rwanda Revenue Authority</span>
                                     </div>
-                                    <div className="commissioner-edition">
-                                        <Calendar size={14} />
-                                        <span>2nd Edition - 2025</span>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FileText } from 'lucide-react';
 
 const FacilitationSchema = () => {
@@ -115,7 +116,7 @@ const FacilitationSchema = () => {
                         A Compliance Certificate (Quitus Fiscal) is available, upon request, to taxpayers who have demonstrated a history of correct tax compliance. The benefit of Compliance Certificate (Quitus Fiscal) is that certified taxpayers are not required to pay WHT 5%.
                     </p>
                     <p className="content-paragraph">
-                        The procedure and requirements for applying for a Compliance Certificate (Quitus Fiscal) are listed in more detail on page 55, but in terms of Customs, the taxpayer is required to have:
+                        The procedure and requirements for applying for a Compliance Certificate (Quitus Fiscal) are listed in more detail <Link to="/certificates" className="content-link">(check on Certificates)</Link> for more details, but in terms of Customs, the taxpayer is required to have:
                     </p>
                     <ul className="content-list">
                         <li>Imported goods with the total CIF value above FRW 200,000,000 during two years with at least FRW 100,000,000 each year.</li>

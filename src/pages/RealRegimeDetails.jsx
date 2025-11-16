@@ -23,7 +23,7 @@ const RealRegimeDetails = () => {
             <div className="page-content">
                 <section className="content-section">
                     <p className="content-paragraph">
-                        There are aspects of Real Regime Income Tax that do not apply to the other regimes. These are discussed in turn below. The process of declaring Real Regime Income Tax is described on page 158. The formula for calculation of Real Regime Income Tax is summarised on page 179.
+                        There are aspects of Real Regime Income Tax that do not apply to the other regimes. These are discussed in turn below. The process of declaring Real Regime Income Tax is described <Link to="/declaring-real-regime-e-tax" className="content-link">(check on Declaring Real Regime Income Tax using E-Tax)</Link> for more details. The formula for calculation of Real Regime Income Tax is summarised in this chapter.
                     </p>
                 </section>
 
@@ -119,7 +119,7 @@ const RealRegimeDetails = () => {
                         <li>A company and any individual or company who owns directly or indirectly 50% or more, by value or number, of the voting rights in the company.</li>
                     </ul>
                     <p className="content-paragraph">
-                        Any transactions between related persons is required to be entered into the related party transactions tab. This tab is required to be completed and uploaded with all Real Regime declarations, regardless of whether the taxpayer transacted with related persons, <Link to="/declaring-real-regime-e-tax">(check on Explanation of Domestic Taxes and E-Tax)</Link> for details.
+                        Any transactions between related persons is required to be entered into the related party transactions tab. This tab is required to be completed and uploaded with all Real Regime declarations, regardless of whether the taxpayer transacted with related persons, <Link to="/declaring-real-regime-e-tax" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for details.
                     </p>
                 </section>
 
@@ -148,7 +148,7 @@ const RealRegimeDetails = () => {
                         </ImageModal>
                     </div>
                     <p className="content-paragraph">
-                        These annexures can each be downloaded as normal. <Link to="/domestic-taxes">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more details on downloading annexures.
+                        These annexures can each be downloaded as normal. <Link to="/domestic-taxes" className="content-link">(check on Explanation of Domestic Taxes and E-Tax)</Link> for more details on downloading annexures.
                     </p>
                     <p className="content-paragraph">
                         The process of completing, validating and saving is different for the balance sheet, profit and loss statement and the company representative and is described in more detail below.

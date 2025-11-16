@@ -123,7 +123,7 @@ const ImportingMotoVehicle = () => {
                 <section className="content-section">
                     <h2>What are the Customs Duties on imported motor vehicles?</h2>
                     <p className="content-paragraph">
-                        The rates of Customs Duties on imported motor vehicles are summarised on page 415 below. In addition, a flat rate Motor Vehicle Registration Fee (MVF) is charged upon all imported motor vehicles without any exemptions. This depends upon the capacity or displacement of the engine in cubic centimetres (cc) and is displayed on page 378.
+                        The rates of Customs Duties on imported motor vehicles are summarised below. In addition, a flat rate Motor Vehicle Registration Fee (MVF) is charged upon all imported motor vehicles without any exemptions. This depends upon the capacity or displacement of the engine in cubic centimetres (cc) and is displayed in this chapter.
                     </p>
                     <p className="content-paragraph">
                         The final tab of the depreciation method spreadsheet, titled 'Depreciation Schedule' can be used to estimate the Customs Duties due for imported motor vehicles.

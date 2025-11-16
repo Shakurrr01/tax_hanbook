@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FileText } from 'lucide-react';
 
 const EisEbmsPenalties = () => {
@@ -21,7 +22,7 @@ const EisEbmsPenalties = () => {
             <div className="page-content">
                 <section className="content-section">
                     <p className="content-paragraph">
-                        The penalties and fines relating to the non-compliance with EBM user obligations or misuse are explained below. These may be applied separately, or in addition to, any penalties and fines relating to Value Added Tax (VAT) explained on page 235.
+                        The penalties and fines relating to the non-compliance with EBM user obligations or misuse are explained below. These may be applied separately, or in addition to, any penalties and fines relating to Value Added Tax (VAT), <Link to="/vat-explanation" className="content-link">(check on VAT Explanation)</Link> for more details.
                     </p>
                 </section>
 

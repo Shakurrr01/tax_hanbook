@@ -1,4 +1,5 @@
 import { ClipboardList } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import ImageModal from '../components/ImageModal';
 
 const RegistrationGuide = () => {
@@ -162,10 +163,10 @@ const RegistrationGuide = () => {
                         </ImageModal>
                     </div>
                     <p className="content-paragraph">
-                        Firstly, choose the 'Certificate Type' that matches the application type, for example 'Domestic' if the business type that was registered was a domestic company. Once selected, download and print this certificate. Secondly, choose the 'Certificate Type' titled 'Memorandum' and also download and print this certificate. If there are any other applicable certificates, for example a 'Value Added Tax' certificate, then these should also be printed at this stage, <Link to="/certificates">(check on Certificates – VAT, Compliance Certificates and Tax Clearance Certificates (TCCs))</Link> for more details on certificates.
+                        Firstly, choose the 'Certificate Type' that matches the application type, for example 'Domestic' if the business type that was registered was a domestic company. Once selected, download and print this certificate. Secondly, choose the 'Certificate Type' titled 'Memorandum' and also download and print this certificate. If there are any other applicable certificates, for example a 'Value Added Tax' certificate, then these should also be printed at this stage, <Link to="/certificates" className="content-link">(check on Certificates – VAT, Compliance Certificates and Tax Clearance Certificates (TCCs))</Link> for more details on certificates.
                     </p>
                     <p className="content-paragraph">
-                        Once registered, the business can operate and declare and pay taxes as normal. The immediate obligations of the taxpayer are explained on page 85.
+                        Once registered, the business can operate and declare and pay taxes as normal. The immediate obligations of the taxpayer are explained <Link to="/obligations" className="content-link">(check on Obligations and Bookkeeping)</Link> for more details.
                     </p>
                 </section>
 
