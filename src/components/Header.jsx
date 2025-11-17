@@ -231,7 +231,7 @@ const Header = ({ searchQuery, setSearchQuery }) => {
       link: "/registration-summary",
       dropdown: [
         { title: "FAQ on Registration", link: "/registration-summary" },
-        { title: "FAQ onDomestic Taxes and E-Tax Summary", link: "/domestic-e-tax" },
+        { title: "FAQ on Domestic Taxes and E-Tax Summary", link: "/domestic-e-tax" },
         { title: "FAQ on Income Tax (PIT and CIT)", link: "/pit-cit-sum" },
         { title: "FAQ on Pay As You Earn (PAYE)", link: "/paye-sum" },
         { title: "FAQ on Value Added Tax (VAT)", link: "/vat-sum" },
