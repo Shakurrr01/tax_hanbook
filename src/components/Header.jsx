@@ -230,16 +230,16 @@ const Header = ({ searchQuery, setSearchQuery }) => {
       icon: <BookOpen size={20} />,
       link: "/registration-summary",
       dropdown: [
-        { title: "FAQ on Registration", link: "/registration-summary" },
-        { title: "FAQ on Domestic Taxes and E-Tax", link: "/domestic-e-tax" },
-        { title: "FAQ on Income Tax (PIT and CIT)", link: "/pit-cit-sum" },
-        { title: "FAQ on Pay As You Earn (PAYE)", link: "/paye-sum" },
-        { title: "FAQ on Value Added Tax (VAT)", link: "/vat-sum" },
-        { title: "FAQ On Electronic Invoicing System (EIS)", link: "/eis-sum" },
-        { title: "FAQ on Excise Duty", link: "/excise-sum" },
-        { title: "FAQ on Withholding Taxes", link: "/wht-sum" },
-        { title: "FAQ on Customs", link: "/customs-sum" },
-        { title: "FAQ on Paying Taxes", link: "/paying-sum" }
+        { title: "Registration", link: "/registration-summary" },
+        { title: "Domestic Taxes and E-Tax", link: "/domestic-e-tax" },
+        { title: "Income Tax (PIT and CIT)", link: "/pit-cit-sum" },
+        { title: "Pay As You Earn (PAYE)", link: "/paye-sum" },
+        { title: "Value Added Tax (VAT)", link: "/vat-sum" },
+        { title: "Electronic Invoicing System (EIS)", link: "/eis-sum" },
+        { title: "Excise Duty", link: "/excise-sum" },
+        { title: "Withholding Taxes", link: "/wht-sum" },
+        { title: "Customs", link: "/customs-sum" },
+        { title: "Paying Taxes", link: "/paying-sum" }
       ]
     }
   ], []);
@@ -455,3 +455,4 @@ const Header = ({ searchQuery, setSearchQuery }) => {
 };
 
 export default Header;
+
